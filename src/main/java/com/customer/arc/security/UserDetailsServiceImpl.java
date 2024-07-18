@@ -1,4 +1,4 @@
-package com.customer.arc.services;
+package com.customer.arc.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,7 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.customer.arc.entities.User;
 import com.customer.arc.repositories.UserRepositoryJPA;
-import com.customer.arc.security.UserDetailsImpl;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
