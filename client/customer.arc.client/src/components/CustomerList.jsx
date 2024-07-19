@@ -20,7 +20,7 @@ const CustomerList = () => {
   const handleDelete = (id) => {
     axios.post(`http://localhost:8080/api/customers/delete/${id}`)
       .then(() => {
-        // Silme işleminden sonra müşteri listesini güncelle
+        
         setCustomers(customers.filter(customer => customer.id !== id));
       })
       .catch(error => console.error('Error deleting customer:', error));
